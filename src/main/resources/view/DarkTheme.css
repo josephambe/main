@@ -160,6 +160,12 @@
     -fx-text-fill: white;
 }
 
+.circle_color {
+    -fx-stroke: "red";
+    -fx-stroke-width: 1;
+    -fx-position-shape: true;
+}
+
 .stack-pane {
      -fx-background-color: derive(#1d1d1d, 20%);
 }

@@ -10,6 +10,8 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.layout.StackPane?>
 <HBox id="cardPane" fx:id="cardPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <GridPane HBox.hgrow="ALWAYS">
         <columnConstraints>
@@ -28,27 +30,35 @@
                 </Label>
                 <Label fx:id="code" text="\$code" styleClass="cell_title_label " />
             </HBox>
+
             <FlowPane fx:id="tags" />
 
-            <HBox spacing="5" alignment="CENTER_LEFT">
-            <Label styleClass="cell_small_label" text="CREDITS: "/>
-            <Label fx:id="credits" styleClass="cell_list_label" text="\$credits" />
-            </HBox>
+            <StackPane>
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Label styleClass="cell_small_label" text="CREDITS: "/>
+                    <Label fx:id="credits" styleClass="cell_list_label" text="\$credits" />
+                </HBox>
+
+                <Circle fx:id="circle" centerX="100" centerY="300" styleClass="circle_color" fill="rgba(124,240,10,0)"
+                        radius="20"  >
+                </Circle>
+                <Label fx:id="grade" styleClass="cell_grade_label" text="\$grade" />
+            </StackPane>
+
 
             <HBox spacing="5" alignment="CENTER_LEFT">
-            <Label styleClass="cell_small_label" text="SEMESTER: "/>
-            <Label fx:id="semester" styleClass="cell_list_label" text="\$semester" />
+                <Label styleClass="cell_small_label" text="SEMESTER: "/>
+                <Label fx:id="semester" styleClass="cell_list_label" text="\$semester" />
             </HBox>
 
-            <HBox spacing="5" alignment="CENTER_LEFT">
-            <Label styleClass="cell_small_label" text="YEAR: "/>
-            <Label fx:id="year" styleClass="cell_list_label" text="\$year" />
-            </HBox>
 
             <HBox spacing="5" alignment="CENTER_LEFT">
-            <Label styleClass="cell_small_label" text="GRADE: "/>
-            <Label fx:id="grade" styleClass="cell_grade_label" text="\$grade" />
+                <Label styleClass="cell_small_label" text="YEAR: "/>
+                <Label fx:id="year" styleClass="cell_list_label" text="\$year" />
             </HBox>
+
+
+
         </VBox>
     </GridPane>
 </HBox>
