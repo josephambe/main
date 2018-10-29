@@ -12,7 +12,7 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
 public class Year {
 
     public static final String MESSAGE_YEAR_CONSTRAINTS =
-            "Year must be [1-5]. Example: 1 represents Year 1";
+            "Year must be [1-5]. Example: 1 represents Year 1.\nThe Year is the 2nd entry.";
 
     /**
      * No whitespace allowed.

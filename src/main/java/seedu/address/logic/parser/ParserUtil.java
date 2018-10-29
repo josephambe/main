@@ -70,10 +70,10 @@ public class ParserUtil {
 
         if (args.length < min || args.length > max) {
             throw new ParseException("Invalid number of arguments!"
-                    + "Number of arguments should be more than or equal to "
-                    + min
-                    + " and less than or equal to "
-                    + max);
+                    + " Number of arguments should be more than or equal to " + min
+                    + " and less than or equal to " + max
+                    + "\nInput oder: [CODE], [YEAR], [SEMESTER], [CREDITS], [GRADE]"
+                    + "\nExample: CS2103  1  s1  4  A+ ");
         }
     }
 

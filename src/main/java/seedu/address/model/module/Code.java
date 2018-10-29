@@ -15,7 +15,7 @@ public class Code {
      * Describes the requirements for code value.
      */
     public static final String MESSAGE_CODE_CONSTRAINTS =
-            "Code can take any values except whitespaces";
+            "Code can take any values except whitespaces.\nThe Module Code is the 1st entry.";
 
     /**
      * No whitespace allowed.

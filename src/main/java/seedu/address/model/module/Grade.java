@@ -19,7 +19,7 @@ public class Grade {
      * Describes the requirements for grade value.
      */
     public static final String MESSAGE_GRADE_CONSTRAINTS =
-            "Grade can be A+, A, A-, B+, B, B-, C+, C, D+, D, F, CS, CU";
+            "Grade can be A+, A, A-, B+, B, B-, C+, C, D+, D, F, CS, CU\nThe Module Grade is the last entry.";
 
     public static final String MESSAGE_POINT_CONSTRAINTS =
             "Score must be between [0, 5] with increments of 0.5 and not 0.5";
