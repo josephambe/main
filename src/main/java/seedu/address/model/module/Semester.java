@@ -18,7 +18,8 @@ public class Semester {
     /**
      * Describes the requirements for semester value.
      */
-    public static final String MESSAGE_SEMESTER_CONSTRAINTS = "Semester can be 1, 2, s1 or s2. \nThe Semester is the 3rd entry.";
+    public static final String MESSAGE_SEMESTER_CONSTRAINTS = "Semester can be 1, 2, s1 or s2. "
+                                                                + "\nThe Semester is the 3rd entry.";
 
     /**
      * No whitespace allowed.

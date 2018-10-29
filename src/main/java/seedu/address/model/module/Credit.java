@@ -14,7 +14,8 @@ public class Credit {
     /**
      * Describes the requirements for credit value.
      */
-    public static final String MESSAGE_CREDIT_CONSTRAINTS = "Credits must be a integer. \nThe credits are the 4th entry.";
+    public static final String MESSAGE_CREDIT_CONSTRAINTS = "Credits must be a integer."
+                                                            + "\nThe credits are the 4th entry.";
 
     /**
      * Immutable credit value.
