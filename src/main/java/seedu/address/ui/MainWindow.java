@@ -34,11 +34,7 @@ public class MainWindow extends UiPart<Stage> {
     private Logic logic;
 
     // Independent Ui parts residing in this Ui container
-    //private PersonListPanel personListPanel;
-    //private PersonListPanel personListPanel2;
-    private PersonListPanel capPanel;
     private ModuleListPanel moduleListPanel;
-    private ModuleListPanel moduleListPanelTwo;
     private Config config;
     private UserPrefs prefs;
     private HelpWindow helpWindow;
@@ -54,15 +50,6 @@ public class MainWindow extends UiPart<Stage> {
 
     @FXML
     private StackPane moduleListPanelPlaceholderTwo;
-
-    @FXML
-    private StackPane personListPanelPlaceholder;
-
-    @FXML
-    private StackPane personListPanelPlaceholder2;
-
-    @FXML
-    private StackPane capPanelPlaceholder;
 
     @FXML
     private StackPane resultDisplayPlaceholder;
@@ -134,18 +121,11 @@ public class MainWindow extends UiPart<Stage> {
         moduleListPanel = new ModuleListPanel(logic.getFilteredModuleList());
         moduleListPanelPlaceholder.getChildren().add(moduleListPanel.getRoot());
 
-        moduleListPanelTwo = new ModuleListPanel(logic.getFilteredModuleList());
+        ModuleListPanel2 moduleListPanelTwo = new ModuleListPanel2(logic.getFilteredModuleList());
         moduleListPanelPlaceholderTwo.getChildren().add(moduleListPanelTwo.getRoot());
 
-
-//        personListPanel = new PersonListPanel(logic.getFilteredPersonList());
-//        personListPanelPlaceholder.getChildren().add(personListPanel.getRoot());
-
-//        personListPanel2 = new PersonListPanel(logic.getFilteredPersonList());
-//        personListPanelPlaceholder2.getChildren().add(personListPanel2.getRoot());
-
-        capPanel = new PersonListPanel(logic.getFilteredPersonList());
-        capPanelPlaceholder.getChildren().add(capPanel.getRoot());
+        //capPanel = new PersonListPanel(logic.getFilteredPersonList());
+        //capPanelPlaceholder.getChildren().add(capPanel.getRoot());
 
         ResultDisplay resultDisplay = new ResultDisplay();
         resultDisplayPlaceholder.getChildren().add(resultDisplay.getRoot());
@@ -209,9 +189,7 @@ public class MainWindow extends UiPart<Stage> {
         raise(new ExitAppRequestEvent());
     }
 
-//    public PersonListPanel getPersonListPanel() {
-//        return personListPanel;
-//    }
+
 
 
     public ModuleListPanel getModuleListPanel() {

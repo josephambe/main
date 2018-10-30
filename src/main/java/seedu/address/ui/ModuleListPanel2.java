@@ -11,17 +11,18 @@ import seedu.address.commons.core.LogsCenter;
 import seedu.address.commons.events.ui.ModulePanelSelectionChangedEvent;
 import seedu.address.model.module.Module;
 
+
 /**
- * Describes the UI design of first panel containing module list display.
+ * Describes the design of second UI panel containing module list display.
  */
-public class ModuleListPanel extends UiPart<Region> {
-    private static final String FXML = "ModuleListPanel.fxml";
-    private final Logger logger = LogsCenter.getLogger(ModuleListPanel.class);
+public class ModuleListPanel2 extends UiPart<Region> {
+    private static final String FXML = "ModuleListPanel2.fxml";
+    private final Logger logger = LogsCenter.getLogger(ModuleListPanel2.class);
 
     @FXML
     private ListView<Module> moduleListView;
 
-    public ModuleListPanel(ObservableList<Module> moduleList) {
+    public ModuleListPanel2(ObservableList<Module> moduleList) {
         super(FXML);
         setConnections(moduleList);
         registerAsAnEventHandler(this);
@@ -47,10 +48,10 @@ public class ModuleListPanel extends UiPart<Region> {
      * Scrolls to the {@code ModuleCard} at the {@code index} and selects it.
      */
     //private void scrollTo(int index) {
-    //    Platform.runLater(() -> {
-    //        moduleListView.scrollTo(index);
-    //        moduleListView.getSelectionModel().clearAndSelect(index);
-    //    });
+    //Platform.runLater(() -> {
+    //moduleListView.scrollTo(index);
+    //moduleListView.getSelectionModel().clearAndSelect(index);
+    //});
     //}
 
 
@@ -72,7 +73,7 @@ public class ModuleListPanel extends UiPart<Region> {
                 setGraphic(null);
                 setText(null);
             } else {
-                setGraphic(new ModuleCard(module).getRoot());
+                setGraphic(new ModuleCard2(module).getRoot());
             }
         }
     }

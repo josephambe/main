@@ -8,9 +8,9 @@ import seedu.address.model.module.Module;
 /**
  * An UI component that displays information of a {@code Module}.
  */
-public class ModuleCard extends UiPart<Region> {
+public class ModuleCard2 extends UiPart<Region> {
 
-    private static final String FXML = "ModuleListCard.fxml";
+    private static final String FXML = "ModuleListCard2.fxml";
 
     /**
      * Note: Certain keywords such as "location" and "resources" are reserved keywords in JavaFX.
@@ -35,7 +35,7 @@ public class ModuleCard extends UiPart<Region> {
     @FXML
     private Label grade;
 
-    public ModuleCard(Module module) {
+    public ModuleCard2(Module module) {
         super(FXML);
         this.module = module;
         id.setText(""); // may be used to index module cards in the UI.
@@ -55,12 +55,12 @@ public class ModuleCard extends UiPart<Region> {
         }
 
         // instanceof handles nulls
-        if (!(other instanceof ModuleCard)) {
+        if (!(other instanceof ModuleCard2)) {
             return false;
         }
 
         // state check
-        ModuleCard card = (ModuleCard) other;
+        ModuleCard2 card = (ModuleCard2) other;
         return id.getText().equals(card.id.getText())
                 && module.equals(card.module);
     }
