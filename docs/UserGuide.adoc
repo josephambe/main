@@ -333,7 +333,9 @@ completed modules and the number of incomplete modules the user has entered. If
 the completed modules do not have sufficient grades to meet the CAP goal, try to
 add some modules you are planning to take; it may be that you need an A+ is four
 other modules before your CAP goal can be achieved. It is also based on the
-adjustments made by the user. For example, if the user originally enters
+adjustments made by the user. For example, if the user originally enters an
+incomplete module then updates it later to reflect their final grade, this will
+affect their chances of achieving their CAP goal.
 
 
 *Q*: I made the wrong adjustment to a module...how do I remove the adjustment
